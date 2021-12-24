@@ -34,6 +34,7 @@ import savedProductsRoute from './routes/savedproducts.js'
 import productPricesRoute from './routes/productprices.js'
 import updateAllPricesRoute from './routes/updateprices.js'
 import productDataRoute from './routes/productdata.js'
+import showAllProductsRoute from './routes/showallproducts.js'
 
 app.use('/',homeRoute);
 app.use('/search',searchRoute)
@@ -43,6 +44,7 @@ app.use('/savedproducts',savedProductsRoute)
 app.use('/productprices',productPricesRoute)
 app.use('/updateprices',updateAllPricesRoute)
 app.use('/productdata',productDataRoute)
+app.use('/showallproducts',showAllProductsRoute)
 
 import { Product } from './models/saveProduct.js'
 import { getProductPrice } from './data/price.js'
