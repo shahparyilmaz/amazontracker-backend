@@ -6,6 +6,5 @@ export const updateAllProducts = async()=>{
     allproducts.forEach(async(product,index)=>{
         data.push(product)
     })
-    // data.push(allproducts)
     return data
 }

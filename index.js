@@ -6,9 +6,12 @@ import express from 'express'
 // const express = require('espress')
 import cors from 'cors'
 // const cors = require('cors');
+
 import dotenv from 'dotenv'
 // const dotenv = require('cors')
-dotenv.config()
+if(process.env.NODE_ENV !== 'production'){
+    dotenv.config()
+}
 // require('dotenv').config();
 import mongoose from 'mongoose'
 // const mongoose = require('mongoose')
