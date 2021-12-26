@@ -1,5 +1,6 @@
 // if(process.env.NODE_ENV !== 'production'){
-//     require('dotenv').load()
+//     import dotenv from 'dotenv'
+//     dotenv.load()
 // }
 
 import express from 'express'
