@@ -1,3 +1,7 @@
+// if(process.env.NODE_ENV !== 'production'){
+//     require('dotenv').load()
+// }
+
 import express from 'express'
 // const express = require('espress')
 import cors from 'cors'
@@ -16,7 +20,7 @@ app.use(bodyParser.urlencoded({limit:"20mb",extended:true}))
 const port = process.env.PORT || 4000
 app.use(cors())
 app.use(express.json())
-const connection_url = process.env.ATLAS_URL
+const connection_url = process.env.MONGODB_URL
 mongoose.connect(connection_url,{useNewUrlParser:true,useUnifiedTopology:true})
 const connection=mongoose.connection
 connection.once('open',()=>{
